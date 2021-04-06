@@ -6,6 +6,7 @@
 npm i dotenv
 npm i express mongoose ejs 
 npm i mongoose-encryption
+npm i md5
 
 
 
@@ -32,8 +33,20 @@ const encrypt = require("mongoose-encryption"); // npm i mongoose-encryption
  
  ```
  
- ## MONGOOSE-ENCRYPTION
+ ## MONGOOSE-ENCRYPTION (level 2)
 - This is done to save the user-entered  data from the stealing by adding layer of encrytion over it.
 - [https://www.npmjs.com/package/mongoose-encryption] (click here  for package resources) 
 - also read about plugins in this.
 
+## Md5 for hashing of password.(level 3)
+- It is a layer of password security in which we are adding a new layer buy passing password through a hash function.
+- the password can be hashed multiple times .
+- [https://www.npmjs.com/package/md5] (resources of md5)
+ ```javascript
+ 
+ const password = md5(req.body.password); // this is how md5 is used.
+ 
+ 
+ ```
+ ## Hashing and salting.(level 4)
+ - It is a method in which the additonal no is added to password then passed to the hash function.
