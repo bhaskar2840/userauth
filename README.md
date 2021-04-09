@@ -50,3 +50,5 @@ const encrypt = require("mongoose-encryption"); // npm i mongoose-encryption
  ```
  ## Hashing and salting.(level 4)
  - It is a method in which the additonal no is added to password then passed to the hash function.
+
+## (level 5)
