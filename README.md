@@ -82,4 +82,4 @@ bcrypt.hash(req.body.password,saltRounds,function(err,hash){
 
 ```
 
-## (level 5)
+##  Using Passport.js for cookies and sessions. (level 5)
