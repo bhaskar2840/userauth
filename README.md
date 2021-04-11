@@ -51,4 +51,35 @@ const encrypt = require("mongoose-encryption"); // npm i mongoose-encryption
  ## Hashing and salting.(level 4)
  - It is a method in which the additonal no is added to password then passed to the hash function.
 
+> installing all the packages.
+```cmd
+nvm --version
+ npm i bcrypt
+ 
+ npm i bcrypt@3.0.2 // for perticular version
+ 
+
+```
+>must initalize in javascript as:-
+```javascript 
+const bcrypt = require("bcrypt");  // is another hashing function but much better than the md5.
+const saltRounds = 10; // this will add no of salting in the password.
+
+// this is done during the hashing while
+bcrypt.hash(req.body.password,saltRounds,function(err,hash){
+        const newUser = new User({
+            email:req.body.username,
+            password:hash})}); // this will do the hashing in the password.
+
+// this is done while comparing the password for login page.
+            
+ bcrypt.compare(password,foundUser,password,function(err,result){ // check the password.
+                    if (result === true){ res.render("secrets");} })
+               
+            }
+        });
+
+
+```
+
 ## (level 5)
