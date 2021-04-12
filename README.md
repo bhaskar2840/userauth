@@ -83,3 +83,7 @@ bcrypt.hash(req.body.password,saltRounds,function(err,hash){
 ```
 
 ##  Using Passport.js for cookies and sessions. (level 5)
+
+- passport.js is a javascript framework that helps to add cookies and session in the website.
+- cookies are like an package that has some imformation related to the user and is vaild only when the session is up and running.
+- sessions are the time period till which you are doing the work on a particular webiste.
