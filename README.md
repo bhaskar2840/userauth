@@ -90,13 +90,20 @@ bcrypt.hash(req.body.password,saltRounds,function(err,hash){
 
 > Install the dependencies.
 ``` cmd
-npm i passport passort-session mongoose
+npm i passport passort-session passport-local-mongoose
 
 ```
-
+> Import the packages.
 ```node
 
+const passport = require("passport");
+const session =require("express-session");
+const passportLocalMongoose = require("passport-local-mongoose");
+
 
 ```
+- [http://www.passportjs.org/] passport documentation.
+- [https://www.npmjs.com/package/express-session]  express session npm documentation.
+- 
 
 
