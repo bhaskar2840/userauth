@@ -106,5 +106,6 @@ const passportLocalMongoose = require("passport-local-mongoose");
 - [https://www.npmjs.com/package/express-session]  express session npm documentation.
 
 ## Level 6(oauth)
+- this is basically a way to authenticate the website.
 
 
